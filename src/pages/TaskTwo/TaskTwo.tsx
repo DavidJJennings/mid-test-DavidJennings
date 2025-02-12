@@ -1,5 +1,5 @@
 import { processData } from "@/utils";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface MultiData {
   value: number;
@@ -11,6 +11,7 @@ const TaskTwo = () => {
     { value: 2, multiplier: 2 },
     { value: 3, multiplier: 3 },
   ]);
+  
 
 
   return (

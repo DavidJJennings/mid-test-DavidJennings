@@ -38,6 +38,23 @@ const TaskOne = () => {
     });
   }
 
+    // This throws a 405
+    // useEffect(() => {
+    //   const fetchData = async () => {
+    //     try {
+    //       const response = await fetch("https://api.restful-api.dev/objects");
+    //       if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+    
+    //       const data = await response.json();
+    //       console.log(data);
+    //     } catch (error) {
+    //       console.error("Error fetching data:", error);
+    //     }
+    //   };
+    
+    //   fetchData();
+    // }, []);
+
   useEffect(() => {
     async function getPhones(){
       setIsLoading(true);
